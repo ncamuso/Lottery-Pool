@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h3>Lottery Pool Calculator</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="NumberOfPeople">Number of Participants</label>
+                <input id="NumberOfPeople" type="number" class="form-control" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="NumberOfMegabucks">Number of Megabucks Tickets</label>
+                <input id="NumberOfMegabucks" type="number" class="form-control" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="NumberOfMegaMillions">Number of Mega Millions Tickets</label>
+                <input id="NumberOfMegaMillions" type="number" class="form-control" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="NumberOfPowerball">Number of Powerball Tickets</label>
+                <input id="NumberOfPowerball" type="number" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p id="Result"></p>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/js/Index.js"></script>
+}
